@@ -5,9 +5,10 @@ import App from './App'
 import router from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import axios from 'axios'/* 引入文件 */
+
 Vue.use(ElementUI)
-import axios from 'axios'//引入文件
-Vue.prototype.$http = axios;//将axios挂载到Vue实例中的$ajax上面,在项目中的任何位置通过this.$http使用
+Vue.prototype.$http = axios /* 将axios挂载到Vue实例中的$ajax上面,在项目中的任何位置通过this.$http使用 */
 
 Vue.config.productionTip = false
 
